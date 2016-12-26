@@ -14,6 +14,12 @@ body{
   align-items: center;
 }
 
+.digital{
+  position: relative;
+  font-size: 80px;
+  color: white;
+}
+
 .clock{
   width: 30rem;
   height: 30rem;
@@ -52,3 +58,4 @@ body{
 .sec-hand{
   background: black;
 }
+
