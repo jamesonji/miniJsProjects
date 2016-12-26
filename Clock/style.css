@@ -1,6 +1,6 @@
 html{
+  background: url('https://source.unsplash.com/random/800x600');
   background-size: cover;
-  background-color: grey;
   font-family: 'helvetica neue';
   text-align: center;
   font-size: 10px;
@@ -37,25 +37,28 @@ body{
   transform: translateY(-3px);
 }
 .hand{
-  width: 50%;
   height: 6px;
   position: absolute;
+  left: 50%;
   top:50%;
-  transform-origin: 100%;
-  transform: rotate(90deg);
+  transform-origin: left;
+  transform: rotate(-90deg);
   transition: all 0.05s;
   cubic-bezier(0.61, 0.17, 0.26, 1.59);
 }
 
 .hour-hand{
   background: white;
+  width: 30%;
 }
 
 .min-hand{
+  width: 40%;
   background: darkgrey;
 }
 
 .sec-hand{
+  width: 50%;
   background: black;
 }
 

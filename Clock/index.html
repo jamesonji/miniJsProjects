@@ -43,9 +43,9 @@
         
         digital.textContent = `${hours}:${minutes}:${(seconds < 10? 0 : '')}${seconds}`;
         
-        const secondsDegrees = secondsOrigin + ((seconds/ 60 ) * 360 + 90);
-        const minutesDegrees = minutesOrigin + ((minutes/ 60) * 360 + 90);
-        const hoursDegrees   = hoursOrigin + ((hours/ 12) * 360 + 90);
+        const secondsDegrees = secondsOrigin + ((seconds/ 60 ) * 360 - 90);
+        const minutesDegrees = minutesOrigin + ((minutes/ 60) * 360 - 90);
+        const hoursDegrees   = hoursOrigin + ((hours/ 12) * 360 - 90);
         
         secondHand.style.transform = 'rotate('+ secondsDegrees + 'deg)';
         minuteHand.style.transform = 'rotate('+ minutesDegrees + 'deg)';
